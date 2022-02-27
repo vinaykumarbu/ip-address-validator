@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This package validates IP address and its version",
   "main": "index.js",
+  "repository": "https://github.com/vinaykumarbu/ip-address-validator/",
   "keywords": [
     "npm",
     "ipaddress",
