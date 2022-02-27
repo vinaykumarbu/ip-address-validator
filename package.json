@@ -1,0 +1,20 @@
+{
+  "name": "ip-address-validator",
+  "version": "1.0.0",
+  "description": "This package validates IP address and its version",
+  "main": "index.js",
+  "keywords": [
+    "npm",
+    "ipaddress",
+    "validation",
+    "nodejs",
+    "javascript",
+    "ip-validation",
+    "regex",
+    "ipv4",
+    "ipv6",
+    "version"
+  ],
+  "author": "Vinay Kumar B U",
+  "license": "ISC"
+}
