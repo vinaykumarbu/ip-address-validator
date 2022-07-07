@@ -1,6 +1,6 @@
 # ip-address-validator
 
-> Validate if the IP address and its version
+> Validate the IP address and check its version
 
 ## Install
 
@@ -39,17 +39,19 @@ ipVersion('a.b.c.d');
 
 ### isIPAddress(string)
 
-Check if `string` is valid IP address.
+Check if the `string` is valid IP address.
 
 ### isIPV6Address(string)
 
-Check if `string` is valid IPv6 address.
+Check if the `string` is valid IPv6 address.
 
 ### isIPV4Address(string)
 
-Check if `string` is valid IPv4 address.
+Check if the `string` is valid IPv4 address.
 
 ### ipVersion(string)
 
-Returns `6` if `string` is IPv6, `4` if `string` is IPv4, or `undefined` if `string` is neither.
+Returns `6` if the `string` is IPv6,
+Returns `4` if the `string` is IPv4, 
+Returns `undefined` if the `string` is neither IPV4 nor IPV6.
 
