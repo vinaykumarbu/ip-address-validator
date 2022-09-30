@@ -53,6 +53,6 @@ module.exports = {
    * @returns version
    */
   ipVersion(ipAddress) {
-    return new RegExp(`(?:^${ipV4Regex}$)|(?:^${ipV6Regex}$)`).test(ipAddress.toString()) ? (new RegExp(`^${ipV6Regex}$`).test(ipV6Address.toString()) ? 6 : 4) : "Please enter valid IP address";
+    return new RegExp(`(?:^${ipV4Regex}$)|(?:^${ipV6Regex}$)`).test(ipAddress.toString()) ? (new RegExp(`^${ipV6Regex}$`).test(ipAddress.toString()) ? 6 : 4) : "Please enter valid IP address";
   },
 };
