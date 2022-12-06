@@ -14,7 +14,7 @@ const ipV6Regex = `
 (?:${IpV6OctateRegex}:){2}(?:(?::${IpV6OctateRegex}){0,3}:${ipV4Regex}|(?::${IpV6OctateRegex}){1,5}|:)| 
 (?:${IpV6OctateRegex}:){1}(?:(?::${IpV6OctateRegex}){0,4}:${ipV4Regex}|(?::${IpV6OctateRegex}){1,6}|:)| 
 (?::(?:(?::${IpV6OctateRegex}){0,5}:${ipV4Regex}|(?::${IpV6OctateRegex}){1,7}|:))            
-)(?:%[0-9a-zA-Z]{1,})?                                            
+)(?:%[0-9a-zA-Z]{1,})?|(\:\:\d)                                            
 `
   .replace(/\s*\/\/.*$/gm, "")
   .replace(/\n/g, "")
