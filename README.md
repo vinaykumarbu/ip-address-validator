@@ -25,6 +25,9 @@ isIPV4Address('10.10.8.4');
 isIPV6Address('1:2:3:4:5:6:7:8');
 //=> true
 
+isIPV6Address('::0');
+//=> true
+
 ipVersion('1:2:3:4:5:6:7:8');
 //=> 6
 

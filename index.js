@@ -14,8 +14,7 @@ const ipV6Regex = `
 (?:${IpV6OctateRegex}:){2}(?:(?::${IpV6OctateRegex}){0,3}:${ipV4Regex}|(?::${IpV6OctateRegex}){1,5}|:)| 
 (?:${IpV6OctateRegex}:){1}(?:(?::${IpV6OctateRegex}){0,4}:${ipV4Regex}|(?::${IpV6OctateRegex}){1,6}|:)| 
 (?::(?:(?::${IpV6OctateRegex}){0,5}:${ipV4Regex}|(?::${IpV6OctateRegex}){1,7}|:))            
-)(?:%[0-9a-zA-Z]{1,})?|(\:\:\d)                                            
-`
+)(?:%[0-9a-zA-Z]{1,})`
   .replace(/\s*\/\/.*$/gm, "")
   .replace(/\n/g, "")
   .trim();
@@ -44,7 +43,7 @@ module.exports = {
    * @returns true or false
    */
   isIPV6Address(ipV6Address) {
-    return new RegExp(`^${ipV6Regex}$`).test(ipV6Address.toString());
+    return new RegExp(`^${ipV6Regex}$`).test(ipV6Address.toString()) || new RegExp(/::\d/).test(ipV6Address.toString()) ;
   },
 
   /**
