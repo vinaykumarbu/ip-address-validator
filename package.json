@@ -1,6 +1,6 @@
 {
   "name": "ip-address-validator",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "This package validates IP address and its version",
   "main": "index.js",
   "repository": "https://github.com/vinaykumarbu/ip-address-validator/",
